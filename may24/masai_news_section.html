@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+        }
+        #container>div>h1{
+            text-align: center;
+        }
+        #container>div:first-child>div{
+            
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: rgb(242,246,255);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #container>div:first-child>div>div{
+            
+            width:25%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            padding:0px 20px;
+            background-color: white;
+            border-radius: 7px;;
+        }
+
+        #container>div:first-child>div>div>img{
+            width:100%;
+        }
+        #container>div:first-child>div>div>p:nth-child(2){
+            color:rgb(96,141,234);
+        }
+        button{
+            display:block;
+            margin: auto;
+            margin-top:15px;
+            border:1px solid red;
+            padding:10px;
+            border-radius: 10px;
+            color:red;
+        }
+        #container>div:nth-child(2)>div{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div>
+           <h1>
+            MASAI IN THE  NEWS
+            
+           </h1> 
+           <div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ET_3754cc10ec.png" alt="">
+                <P>
+                    21 Dec 2001
+                </P>
+                <h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil officia ullam.
+                </h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat illo quae corrupti!
+                </p>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/money_Control_c3e25f5ceb.png" alt="">
+                <P>
+                    21 Dec 2001
+                </P>
+                <h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil officia ullam.
+                </h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat illo quae corrupti!
+                </p>
+            </div>
+            <div>
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/vccircle_6ef779c958.png" alt="">
+                <P>
+                    21 Dec 2001
+                </P>
+                <h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nihil officia ullam.
+                </h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat illo quae corrupti!
+                </p>
+            </div>
+            
+           </div>
+           <button>see more></button>
+        </div>
+        <div>
+            <h1>Our Investors, Who Believe In Us</h1>
+            <div>
+                <div>
+                    <img src="https://www.masaischool.com/img/our-investors/unitus.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://www.masaischool.com/img/our-investors/omidyar.svg" alt="">
+                </div>
+                <div>
+                    <img src="https://www.masaischool.com/img/our-investors/indiaQuotient.svg" alt="">
+                </div>
+            </div>
+            <button>see more investors></button>
+        </div>
+    </div>
+    
+</body>
+</html>

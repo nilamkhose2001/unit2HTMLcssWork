@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display:grid;
+            grid-template-columns: repeat(3,25%);
+            grid-template-rows: repeat(3,150px);
+            gap:20px;
+            
+            justify-content: center;
+            margin:auto;
+            margin-top: 50px;
+            background-color: rgb(250,250,252);
+            
+        }
+        #container>div{
+            
+            border-radius: 10px;
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 60x 70px;
+            justify-content: space-evenly;
+            gap:10px;
+            grid-template-areas: 
+            "cap dol"
+            "para para";
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        ;
+
+
+        }
+        #container>div>div{
+            
+        }
+        #container>div>div:first-child{
+            grid-area: cap;
+            font-weight: bold;
+            padding:7px;
+           
+        }
+        #container>div>div:nth-child(2){
+            grid-area: dol;
+            display:flex;
+            justify-content: end;
+            color:rgb(183,138,56);
+            font-weight: bold;
+            padding:7px;
+        }
+        #container>div>div:last-child{
+            grid-area: para;
+            display:flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding:7px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <div>
+                Cappuccino
+            </div>
+            <div>$49</div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, nihil. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, </p>
+            </div>
+            
+        </div>
+        <div>
+            <div>Cappuccino</div>
+            <div>$49</div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, </p>
+            </div>
+        </div>
+        <div>
+            <div>Cappuccino</div>
+            <div>$49</div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+        <div>
+            <div>Cappuccino</div>
+            <div>$49</div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,</p>
+            </div>
+        </div>
+        <div>
+            <div>Cappuccino</div>
+            <div>$49</div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,</p>
+            </div>
+        </div>
+        <div>
+            <div>Cappuccino</div>
+            <div>$49</div>
+           <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+           </div>
+        </div>
+        <div>
+            <div>Cappuccino</div>
+            <div>$49</div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+        <div>
+            <div>Cappuccino</div>
+            <div>$49</div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+        <div>
+            
+            <div>Cappuccino</div>
+            <div>$49</div>
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #container{
+            width:60%;
+            
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,120px);
+            gap:25px;
+            margin: auto;
+            margin-top: 100px;
+            justify-content: space-around;
+            padding:40px;
+            grid-template-areas: 
+            "one one two two"
+            "three four four four"
+            "five five five five";
+        }
+        #container>div{
+           
+            background-color: rgb(68,68,68);
+            color:white;
+            display: grid;
+            align-items: center;
+            font-size: 40px;
+        }
+        #container>div{
+            border-radius: 10px;
+        }
+        #container>div:nth-child(1){
+            grid-area: one;
+            padding-left: 20px;
+           
+        }
+        #container>div:nth-child(2){
+            grid-area: two;
+            padding-left: 20px;
+        }
+        #container>div:nth-child(3){
+            grid-area: three;
+            padding-left: 20px;
+        }
+        #container>div:nth-child(4){
+            grid-area: four;
+            padding-left: 20px;
+        }
+        #container>div:nth-child(5){
+            grid-area: five;
+            padding-left: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+         <div>D</div>
+         <div>E</div>
+    </div>
+</body>
+</html>

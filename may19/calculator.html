@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width:25%;
+            
+            margin:auto;
+            margin-top: 200px;
+            
+        }
+        #main:first-child > .display{
+            
+            
+            width:93%;
+            height:100px;
+            margin: auto;
+        }
+        div{
+            border-radius: 5px; 
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        .keys{
+            display:flex;
+            height: 60px;
+            
+            margin: auto;
+           
+
+        }
+        #main .keys .column{
+            height:50px;
+            width:50px;
+            text-align: center;
+            padding-top: px;
+            margin: auto;
+        }
+        .column:last-child , .keys:last-child > .equal{
+            background-color: black;
+            color:white;
+
+        }
+        .keys:last-child  > .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="display">
+
+        </div>
+        <div class="keys">
+            <div class="column">1</div>
+            <div class="column">2</div>
+            <div class="column">3</div>
+            <div class="column">+</div>
+        </div>
+        <div class="keys">
+            <div class="column">4</div>
+            <div class="column">5</div>
+            <div class="column">6</div>
+            <div class="column">-</div>
+        </div>
+        <div class="keys">
+            <div class="column">7</div>
+            <div class="column">8</div>
+            <div class="column">9</div>
+            <div class="column">*</div>
+        </div>
+        <div class="keys">
+            <div class="column red">c</div>
+            <div class="column">0</div>
+            <div class="column equal">=</div>
+            <div class="column">/</div>
+        </div>
+    </div>
+</body>
+</html>

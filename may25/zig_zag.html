@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #container{
+            width:60%;
+            
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,120px);
+            gap:40px;
+            margin: auto;
+            margin-top: 100px;
+            justify-content: space-around;
+            padding:40px;
+            grid-template-areas: 
+            "one two two three"
+            "four four four six"
+            "seven eight nine nine";
+        }
+        #container>div{
+           
+            background-color: rgb(33,120,103);
+            color:white;
+            display: grid;
+            align-items: center;
+            font-size: 40px;
+        }
+        #container>div{
+           
+        }
+        #container>div:nth-child(1){
+            grid-area: one;
+            padding-left: 20px;
+           
+        }
+        #container>div:nth-child(2){
+            grid-area: two;
+            padding-left: 20px;
+        }
+        #container>div:nth-child(3){
+            grid-area: three;
+            padding-left: 20px;
+        }
+        #container>div:nth-child(4){
+            grid-area: four;
+            padding-left: 20px;
+        }
+        #container>div:nth-child(5){
+            grid-area: five;
+            padding-left: 20px;
+            
+        }
+        #container>div:nth-child(5){
+            grid-area: six;
+            
+            
+        }
+        #container>div:nth-child(5){
+            grid-area: seven;
+            padding-left: 20px;
+            
+        }
+        #container>div:nth-child(5){
+            grid-area: eight;
+            padding-left: 20px;
+            
+        }
+        #container>div:nth-child(5){
+            grid-area:nine;
+            padding-left: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family: "Times New Roman", Times, serif; 
+            text-align: center;
+            width:35%;
+            line-height: 50px;
+            margin: auto;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+        h1+p{
+            
+            text-align: center;
+            width:40%;
+            margin:auto;
+            line-height: 25px;
+        }
+        #container{
+            margin:auto;
+           
+            width:80%;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 380px;
+            gap:15px;
+            margin-top: 30px;
+            grid-template-areas: 
+            "first second third";
+        }
+        #container>div:nth-child(1)
+        {
+            grid-area: first;
+        }
+        #container>div:nth-child(2)
+        {
+            grid-area: second;
+        }
+        #container>div:nth-child(3)
+        {
+            grid-area: third;
+        }
+        h4{
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+           
+        }
+        h2{
+            font-size: 35px;
+            text-align: center;
+            
+        }
+        h2+p{
+            margin-top: -30px;
+            text-align: center;
+        }
+        p+p{
+            text-align: center;
+            line-height: 35px;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        button{
+            padding:15px 20px;
+            font-size: 18px;
+            display: block;
+            margin: auto;
+            border:1px solid rgb(0,122,255);
+            color:rgb(0,122,255);
+            background-color: white;
+            border-radius: 5px;
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #container>div:nth-child(1)>h2{
+            color:green;
+        }
+        #container>div:nth-child(2)>h2{
+            color:orange;
+        }
+        #container>div:nth-child(3)>h2{
+            color:rgb(0,122,255);
+        }
+        button:hover{
+            background-color: rgb(0,122,255);
+            color:white;
+        }
+        /* Medium Screen */
+        @media all and (min-width:480px) and (max-width:720px)
+        {
+            #container{
+                width:95%;
+            display:flex;
+            flex-wrap: wrap;
+              
+                
+                justify-content: space-evenly;
+            
+            
+        }
+        #container>div{
+            width:300px;
+            height:380px;
+            margin-right: auto;
+        }
+         }
+        /* Small SCreen */
+        @media all and (min-width:320px) and (max-width:479px)
+        {
+            #container{
+                grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(3,380px);
+            gap:20px;
+            grid-template-areas: 
+            "first "
+            "second"
+            "third"
+            ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose The Plan that right for your Business</h1>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque cum excepturi magni numquam pariatur illum!</p>
+    <div id="container">
+        <div>
+            <h4>Starter plan</h4>
+            <h2>Free</h2>
+            <p>per month</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, deleniti. consectetur adipisicing elit. </p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h4>Starter plan</h4>
+            <h2>$39.00</h2>
+            <p>per month</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, impedit. consectetur adipisicing elit. </p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h4>Starter plan</h4>
+            <h2>$59.00</h2>
+            <p>per month</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, impedit. consectetur adipisicing elit.</p>
+            <button>Start Now</button>
+        </div>
+    </div>
+</body>
+</html>
